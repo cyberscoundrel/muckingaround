@@ -10,9 +10,9 @@ Please follow the instructions below and fill in the information requested when 
 
 |               | Information   |
 |:-------------:|:-------------:|
-| Student Name  | name-here     |
-| Student ID    | id-here       |
-| Student Email | email-here    |
+| Student Name  | Alexander Smith     |
+| Student ID    | 921401855       |
+| Student Email | asmith33@mail.sfsu.edu    |
 
 
 
