@@ -3,13 +3,18 @@ const mysql = require("mysql2");
 const pool = mysql.createPool({
     connectionLimit: 50,
     host: 'localhost',
-    user: '',
-    password: '',
-    database: '',
-    debug: true,
+    user: 'root',
+    password: '',//this is my password for a ton of stuff lol sorry
+    database: 'termproject',
+    debug: false,
 
 });
 
-const promisePool = pool.promise();
+/*pool.connect(function(err){
+    console.log("connect");
+})*/
 
-module.exports = promisePool;
+//const promisePool = pool.promise();
+
+module.exports = pool.promise();
+//module.exports = promisePool;

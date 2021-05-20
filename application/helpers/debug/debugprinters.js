@@ -8,10 +8,10 @@ colors.setTheme({
 
 const printers = {
     errorPrint: (message) => {
-        console.log()
+        console.log(colors.error(message));
     },
 
-    successPrint: (messaeg) => {
+    successPrint: (message) => {
         console.log(colors.success(message));
     },
 
@@ -20,4 +20,4 @@ const printers = {
     }
 }
 
-modules.export = printers;
+module.exports = printers;

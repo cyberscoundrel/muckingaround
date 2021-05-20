@@ -1,4 +1,4 @@
-<!doctype html>
+<!--<!doctype html>
 
 <html lang="en">
 <head>
@@ -9,27 +9,27 @@
 
   <link rel="stylesheet" type="text/css" href="style.css" >
 
-</head>
+</head>!-->
 
 <body>
     <div id="core-content-wrapper">
-        <section class="page title">
+        <section class="page head">
             <h1>Make post</h1>
         </section>
         <section class="page forms">
-            <form>
+            <form enctype="multipart/form-data" method="POST">
                 <label for="title">Post title:</label><br>
-                <input type="text"><br>
-                <label for="i-desc">Description:</label><br>
-                <input type="text"><br>
-                <label for="i-sub">Image:</label><br>
-                <input type="file"><br>
+                <input name="title" type="text"><br>
+                <label for="idesc">Description:</label><br>
+                <input name="idesc" type="text"><br>
+                <label for="isub">Image:</label><br>
+                <input name="isub" type="file"><br>
                 <label for="use-pol">Acceptable use policy</label>
-                <input type="checkbox"><br>
+                <input name="use-pol" type="checkbox"><br>
                 <input type="submit" value="submit">
             </form>
         </section>
     </div>
   
 </body>
-</html>
+<!--</html>!-->

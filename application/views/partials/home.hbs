@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 
 <html lang="en">
 <head>
@@ -11,15 +11,19 @@
   <link rel="stylesheet" type="text/css" href="style.css" >
   <script type="text/javascript" src="home.js"></script>
 
-</head>
+</head>!-->
 
 <body>
     <div id="core-content-wrapper">
         <section class="page head">
-            <h1><b>Home <span id="photo-count"></span></b></h1>
+            <h1><b>Home <span id="photo-count"></span>{{#if logged}}<a href="/logout"><div style="float: right; margin-right: 10px;">logout</div></a> <a href="/post"><div style="float: right; margin-right: 10px;">post</div></a>{{else}}<a href="/login"><div style="float: right; margin-right: 10px;">login</div></a> <a href="/register"><div style="float: right; margin-right: 10px;">register</div></a>{{/if}}</b></h1>
         </section>
         <section class="page sidebar">
-            <p>sidebar</p>
+            <!--<p>sidebar</p>!-->
+            <!--<a href="/logout">logout</a>!-->
+            <p>search</p>
+            <input type="text" id="search-text">
+            <button id="search-button" onclick="executesearch()">search</button>
         </section>
         <section class="page posts-content">
             <div id="page-posts">
@@ -111,4 +115,4 @@
     
   
 </body>
-</html>
+<!-- </html> !-->

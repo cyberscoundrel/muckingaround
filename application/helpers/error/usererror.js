@@ -14,8 +14,8 @@ class UserError extends Error{
     }
 
     getStatus(){
-        return status;
+        return this.status;
     }
 }
 
-module.exports = usererror;
+module.exports = UserError;

@@ -1,4 +1,4 @@
-<!doctype html>
+<!--<!doctype html>
 
 <html lang="en">
 <head>
@@ -9,44 +9,38 @@
 
   <link rel="stylesheet" type="text/css" href="style.css" >
 
-</head>
+</head>!-->
 
 <body>
     <div id="core-content-wrapper">
         <section class="page head">
-            <h1><b>MY EVIL THREAD</b></h1>
+            <div><h1><b>{{post_title}}</b></h1></div><a href="/"><h1 style="display: inline-block; float:right">HOME</h1></a>
         </section>
         <section class="page sidebar">
-            <p>fsadfasdf</p>
+            <p>{{username}}</p>
+            <table id="comments-table">
+                <tr>comment here</tr>
+            </table>
+            {{#if logged}}
+            <textarea id="comment-text"></textarea>
+            <button onclick="executecomment()" id="comment-submit">comment</button>
+            {{/if}}
         </section>
         <section class="page posts-content">
             <div>
-                <table id="posts-table">
-                    <tr class="post-row">
-                        <td class ="post-info">
+                <div id="posts-table">
                             <ul>
-                                <li class="post-title">
-                                    <p>my evil post</p>
+                                <li>
+                                    <img class="content-image" src="{{image}}">
+                                </li>
+                                <li>
+                                    <p>{{description}}</p>
                                 </li>
                                 <li class="post-meta">
-                                    <p>9/6/96</p>
+                                    <p>{{image_date}}</p>
                                 </li>
                             </ul>
-
-                        </td>
-                        <td class="post-content">
-                            <ul>
-                                <li>
-                                    <img src="tumblr_0e0c53528cbb45c065f64d8ebb171794_c5347f29_540.png">
-                                </li>
-                                <li>
-                                    <p>siodjkgsadkjgkja</p>
-                                </li>
-                            </ul>
-
-                        </td>
-                    </tr>
-                    <tr class="post-row">
+                    <!--<tr class="post-row">
                         <td class ="post-info">
                             <ul>
                                 <li class="post-title">
@@ -69,8 +63,8 @@
                             </ul>
 
                         </td>
-                    </tr>
-                </table>
+                    </tr>!-->
+                </div>
             </div>
         </section>
         <!-- <section>
@@ -89,4 +83,4 @@
     
   
 </body>
-</html>
+<!--</html>!-->
