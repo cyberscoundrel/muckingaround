@@ -137,7 +137,7 @@ router.get('/posts/:id', (req, res, next) => {
         {
             errorPrint(err.getMessage());
             res.status(err.getStatus());
-            req.flash(err.getMessage());
+            req.flash('error',err.getMessage());
             res.redirect(err.getRedirectURL());
         }
         else
@@ -229,7 +229,7 @@ router.get('/get', (req, res, next) => {
     .then((results) => {
         if(results)
         {
-            req.flash('success','hey');
+            req.flash('success','got new posts');
             req.session.save(() => {
                 res.send({message:"results",results:results});
             })
